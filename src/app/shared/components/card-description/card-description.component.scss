@@ -1,0 +1,19 @@
+.card-text-container{
+    // color:white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+.card-container{
+    padding: 16px;
+    border-radius: 10px;
+}

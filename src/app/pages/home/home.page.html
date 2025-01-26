@@ -1,0 +1,10 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title  class="ion-text-capitalize ion-text-center">Catbreeds</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-search-box  (onNewListCats)="onNewListCats($event)" ></app-search-box>
+  <app-card-description [catBreed]="catBreed" *ngFor="let catBreed of listCatInfo"></app-card-description>
+</ion-content>

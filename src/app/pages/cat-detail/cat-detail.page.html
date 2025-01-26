@@ -1,0 +1,31 @@
+<app-header title="Nombre Raza"></app-header>
+<ion-content [fullscreen]="true">
+  <ng-container *ngIf="catDetail">
+    <div class="fixed-image">
+      <img [src]="catDetail.url" *ngIf="catDetail.url">
+    </div>
+
+    <div class="scrollable-content">
+      <ion-label>
+        {{ catDetail.breeds[0].description || ''}}
+      </ion-label>
+      <ion-list>
+        <ion-item>
+          <ion-label>Nombre del Pais: {{catDetail.breeds[0].origin || ''}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Inteligencia: {{catDetail.breeds[0].intelligence || ''}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Adaptabilidad: {{catDetail.breeds[0].adaptability}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Nivel de despredimiento: {{catDetail.breeds[0].shedding_level}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Temperamento: {{catDetail.breeds[0].temperament}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ng-container>
+</ion-content>

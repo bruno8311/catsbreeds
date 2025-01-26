@@ -1,0 +1,13 @@
+<ion-card class="card-container">
+  <ion-card-content>
+    <div  class="card-text-container" style="margin-bottom: 16px;">
+      <span><strong>Nombre Raza:</strong>  {{ catBreed.breeds[0].name }}</span>
+      <span [routerLink]="['/cat-detail', catBreed.id]"> <strong>Más...</strong></span>
+    </div>
+    <img [src]="catBreed.url" alt="Imagen del gato" class="image-container">
+    <div  class="card-text-container" style="margin-top: 16px;">
+      <div><strong>País de origen:</strong> {{ catBreed.breeds[0].origin }}</div>
+      <div><strong>Inteligencia:</strong> {{ catBreed.breeds[0].intelligence }}</div>
+    </div>
+  </ion-card-content>
+</ion-card>

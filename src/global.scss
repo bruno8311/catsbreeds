@@ -35,3 +35,14 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+
+/* Aplicar Roboto como fuente predeterminada */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Asegúrate de incluirlo en Ionic */
+  :root {
+    --ion-font-family: 'Roboto', sans-serif;
+  }
