@@ -13,7 +13,7 @@ import { CatBreedInfo } from 'src/app/shared/interfaces/cat-info.interface';
 export class HomePage implements OnInit, OnDestroy  {
 
   public listCatInfo: CatBreedInfo[] = [];
-  private subscriptions: Subscription[] = [];
+  public subscriptions: Subscription[] = [];
   public listCatBreeds: CatNameBreed[] = [];
 
   constructor( private catService: CatService) { }

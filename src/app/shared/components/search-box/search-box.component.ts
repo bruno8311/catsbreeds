@@ -36,7 +36,7 @@ export class SearchBoxComponent implements OnInit, OnDestroy {
   }
 
   onSearch(event: any) {
-    const searchTerm = event.target.value.trim().toLowerCase();
+    const searchTerm = event.target.value?.trim().toLowerCase();
     if (!searchTerm) return;
     const breed = this.searchBreed(searchTerm);
     if (breed) {

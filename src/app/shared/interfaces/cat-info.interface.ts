@@ -8,17 +8,17 @@ export interface CatBreedInfo {
 
 export interface Breed {
     weight:             Weight;
-    id:                 ID;
-    name:               Name;
+    id:                 string;
+    name:               string;
     cfa_url:            string;
     vetstreet_url:      string;
     vcahospitals_url:   string;
-    temperament:        Temperament;
-    origin:             Origin;
-    country_codes:      CountryCode;
-    country_code:       CountryCode;
+    temperament:        string;
+    origin:             string;
+    country_codes:      string;
+    country_code:       string;
     description:        string;
-    life_span:          LifeSpan;
+    life_span:          string;
     indoor:             number;
     lap:                number;
     adaptability:       number;
@@ -44,46 +44,9 @@ export interface Breed {
     short_legs:         number;
     wikipedia_url:      string;
     hypoallergenic:     number;
-    reference_image_id: ReferenceImageID;
+    reference_image_id: string;
 }
-
-export enum CountryCode {
-    Us = "US",
-}
-
-export enum ID {
-    Beng = "beng",
-}
-
-export enum LifeSpan {
-    The1215 = "12 - 15",
-}
-
-export enum Name {
-    Bengal = "Bengal",
-}
-
-export enum Origin {
-    UnitedStates = "United States",
-}
-
-export enum ReferenceImageID {
-    O3BtzLlsO = "O3btzLlsO",
-}
-
-export enum Temperament {
-    AlertAgileEnergeticDemandingIntelligent = "Alert, Agile, Energetic, Demanding, Intelligent",
-}
-
 export interface Weight {
-    imperial: Imperial;
-    metric:   Metric;
-}
-
-export enum Imperial {
-    The612 = "6 - 12",
-}
-
-export enum Metric {
-    The37 = "3 - 7",
+    imperial: string;
+    metric:   string;
 }

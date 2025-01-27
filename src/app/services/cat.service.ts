@@ -37,10 +37,10 @@ export class CatService {
   }
 
  setCatBreeds(breeds: CatNameBreed[]): void {
-  this.catBreedsSubject.next(breeds);
-}
+    this.catBreedsSubject.next(breeds);
+  }
 
-getCatBreeds(): CatNameBreed[] {
-  return this.catBreedsSubject.getValue();
-}
+  getCatBreeds(): CatNameBreed[] {
+    return this.catBreedsSubject.getValue();
+  }
 }
